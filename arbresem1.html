@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="arrays">Première étape </p>
+    
+    <script>
+    // Show array content index by index
+    // function showArray(array) {
+    //   for (var i = 0; i < array.length; i++) {
+    //     console.log(array[i]);
+    //     if (document.getElementById('arrays') != null) {
+    //       document.getElementById('arrays').innerText +=  "\n" + array[i] //document.getElementById('arrays').innerText +
+    //     }
+    //   }
+    //   document.getElementById('arrays').innerText += "\n_____________\n"
+    // }
+
+    // showArray("Pâtes, Oeuf, Sel, Poivre, Lardon, Oignon, Parmesan");
+    
+    var liste=["Pâtes, Oeuf, Sel, Poivre, Lardon, Oignon, Parmesan"];
+    document.write("Liste course:<br>");
+    document.write(liste.join(", "));
+
+    var carbonara=["Pâtes,Sel, Poivre, Lardon, Oignon, Parmesan"]
+
+ 
+</script>
+<p> Troisième étape</p>
+<ol> 
+    <li> Pâtes </li>
+    <li> Sel </li>
+    <li> Poivre </li>
+    <li> Lardon </li>
+    <li> Oignon </li>
+    <li> Parmesan </li>
+    </ol>
+
+<script>
+    function strSort(li) {
+  return li.sort(function(x,y) {
+    return x.toString().localeCompare(y.toString());
+  });
+}
+document.write(sort.join(", "));
+
+</script>
+</body>
+</html>
